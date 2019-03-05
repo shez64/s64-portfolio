@@ -1,0 +1,81 @@
+
+<html>
+		<a id="return-button" href="index.html">Return</a>
+		<div id="titles">
+			<div id="titlecontent">
+				<h1 style="position: relative; left: 100px;"> Shehzad Sadiq </h1>
+				<h3 style="position: relative; left: 100px;"> Web Developer & Designer </h3>
+				<p> Shehzad started S64 Productions as a way <br>
+					to showcase his passion for developement<br>
+					both with client work as well as his own<br>
+					personal projects. 
+				<p>He successfully delivered sites for his local<br>
+				  clients and was able to build up a rich <br>portfolio.
+				  Shehzad started looking for <br>opportunties and shortly after, got his
+				  first <br>break.
+				</p>
+
+				<p>Just recently on a project for Deloitte,<br>
+				he successfully devlived a customized <br>version
+				of a data analytics web app called <br>SEMOSS.
+				</p>
+				<p>Shehzad now waits anxiously as he looks<br>
+                for his next big project.</p>
+				
+			</div>
+		</div>
+
+	<style>
+			#return-button{
+				float: right;
+				background: none;
+				border: 5px solid gold;
+				color: gold;
+				outline; none;
+				padding: 10px;
+			}
+
+			body{
+				background-image:url('star-night.jpg');
+				background-size: 100% 100%;
+			}
+			#titles
+			{
+			position: absolute;
+			width: 18em;
+			height: 50em;
+			bottom: 0;
+			left: 50%;
+			margin-left: -9em;
+			font-size: 350%;
+			font-weight: bold;
+			text-align: justify;
+			overflow: hidden;
+			transform-origin: 50% 100%;
+			transform: perspective(300px) rotateX(25deg);
+			}
+			#titles:after
+			{
+			position: absolute;
+			content: ' ';
+			left: 0;
+			right: 0;
+			top: 0;
+			bottom: 60%;
+			background-image: linear-gradient(top, rgba(0,0,0,1) 0%, transparent 100%);
+			pointer-events: none;
+			}
+			#titlecontent
+			{
+			color: gold;
+			position: absolute;
+			top: 100%;
+			animation: scroll 100s linear 4s infinite;
+			}
+			@keyframes scroll {
+			0% { top: 100%; }
+			100% { top: -170%; }
+							}
+	</style>
+
+</html>
